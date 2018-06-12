@@ -20,11 +20,11 @@ It ignores the lines with incorrect input formats.
 Running *spbill* should give the following output:
 
     $ spbill bills.csv
-    alice       -112.50
-    bob         -82.50
-    carol       157.50
-    dan         -22.50
-    erin        60.00
+    alice        -112.50
+    bob           -82.50
+    carol         157.50
+    dan           -22.50
+    erin           60.00
     $
 
 At the end of the event, Alice is owing 112.50 dollars, Bob is owing 82.50 dollars and Dan is owing 22.50.  Carol and Erin paid most of the expenses, and each one should receive 157.50 dollars and 60.00 dollars, respectively.  It's up to you to decide who pays who.
