@@ -1,6 +1,5 @@
-#!/bin/sh
+#!/usr/bin/awk -f
 
-awk '
 BEGIN {
     FS=","
     OFMT="%.02f"
@@ -30,4 +29,3 @@ END {
         printf("%-11.11s %8.02f\n", p, lent[p]) | "sort"
     }
 }
-' $*
