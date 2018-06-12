@@ -27,7 +27,7 @@ NF < 4 || ($3 !~ /^\.*[0-9]+\.*[0-9]*$/) { next }
 END {
     for (p in paid) {
         lent[p] = paid[p] - received[p]
-        printf("%s\t\t%.02f\n", p, lent[p]) | "sort"
+        printf("%-11.11s %8.02f\n", p, lent[p]) | "sort"
     }
 }
 ' $*
