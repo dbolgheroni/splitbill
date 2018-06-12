@@ -1,6 +1,6 @@
 *spbill* is a command-line utility to split bills between a group.  It takes a csv-like file, with comma-separated fields, as the input describing the bills and outputs a resume on who must receive and who must pay money.
 
-The input should be in csv format like this:
+The input should be in a csv-like format like this:
 
     who,what,cost,between
 
@@ -15,7 +15,7 @@ The first line says Alice paid a $90.00 bill for beer, to be splitten between he
 
 Note that Dan appears on the first line, but he didn't pay anything at all.  Erin paid something, but didn't split anything else with the others.
 
-It ignores the lines with incorrect input formats.
+It ignores the lines with incorrect input formats.  Note also that trailing commas add fields of empty names, and thus can affect the results.  This is common on some suites like LibreOffice where saving a Calc spreadsheet in csv format usually leave these extra commas.
 
 Running *spbill* should give the following output:
 
