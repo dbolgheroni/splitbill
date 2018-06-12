@@ -1,3 +1,5 @@
+# spbill
+
 *spbill* is a command-line utility to split bills between a group.  It takes a csv-like file, with comma-separated fields, as the input describing the bills and outputs a resume on who must receive and who must pay money.
 
 The input should be in a csv-like format like this:
